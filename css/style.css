@@ -176,11 +176,11 @@ justify-content: space-between;
 /* ------- second part/// experienve----------*/
 
 
-.container {
+#wraper {
   display: flex;
   flex-direction: column;
   background: rgb(164, 224, 204);
-  justify-content: center;
+  justify-content: space-between;
   padding: 5%;
 }
 
@@ -190,7 +190,7 @@ justify-content: space-between;
   padding: 10px;
   border-radius: 10px;
   padding: 2%;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 
@@ -274,21 +274,23 @@ justify-content: space-between;
     display:inline-block;
   }
 
-  .container {
+  #wraper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: stretch;
   }
 
   .instruction {
-    max-width: 500px;
-    margin-right: 30px;
-    margin-bottom: 0;
+    width: 400px;
+    margin: 0;
+    flex-grow: 1;
+    margin-right: 10px;
   }
 
   .story {
-    max-width: 500px;
-    margin-left: 30px;
+    width: 400px;
+    flex-grow: 1;
   }
 
 }
@@ -353,5 +355,6 @@ justify-content: space-between;
   .last-li {
   display:inline-block;
   }
+
 
 }
